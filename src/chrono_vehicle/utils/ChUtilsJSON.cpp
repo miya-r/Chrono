@@ -50,6 +50,7 @@
 #include "chrono_vehicle/wheeled_vehicle/tire/LugreTire.h"
 #include "chrono_vehicle/wheeled_vehicle/tire/PacejkaTire.h"
 #include "chrono_vehicle/wheeled_vehicle/tire/Pac89Tire.h"
+#include "chrono_vehicle/wheeled_vehicle/tire/MFTyre62.h"
 #include "chrono_vehicle/wheeled_vehicle/tire/ReissnerTire.h"
 #include "chrono_vehicle/wheeled_vehicle/tire/RigidTire.h"
 #include "chrono_vehicle/wheeled_vehicle/tire/TMeasyTire.h"
@@ -413,6 +414,8 @@ std::shared_ptr<ChTire> ReadTireJSON(const std::string& filename) {
         tire = chrono_types::make_shared<ReissnerTire>(d);
     } else if (subtype.compare("FEATire") == 0) {
         tire = chrono_types::make_shared<FEATire>(d);
+    } else if (subtype.compare("MFTyre62") == 0) {
+        tire = chrono_types::make_shared<MFTyre62>(d);
     } else {
         throw ChException("Tire type not supported in ReadTireJSON.");
     }

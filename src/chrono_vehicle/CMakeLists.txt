@@ -428,6 +428,8 @@ set(CV_WV_TIRE_FILES
     wheeled_vehicle/tire/ChRigidTire.h
     wheeled_vehicle/tire/ChRigidTire.cpp
     wheeled_vehicle/tire/ChPacejkaTire.h
+    wheeled_vehicle/tire/ChMFTyre62.h
+    wheeled_vehicle/tire/ChMFTyre62.cpp
     wheeled_vehicle/tire/ChPacejkaTire.cpp
     wheeled_vehicle/tire/ChPac89Tire.h
     wheeled_vehicle/tire/ChPac89Tire.cpp
@@ -450,6 +452,8 @@ set(CV_WV_TIRE_FILES
     wheeled_vehicle/tire/RigidTire.cpp
     wheeled_vehicle/tire/PacejkaTire.h
     wheeled_vehicle/tire/PacejkaTire.cpp
+    wheeled_vehicle/tire/MFTyre62.h
+    wheeled_vehicle/tire/MFTyre62.cpp
     wheeled_vehicle/tire/Pac89Tire.h
     wheeled_vehicle/tire/Pac89Tire.cpp
     wheeled_vehicle/tire/LugreTire.h
